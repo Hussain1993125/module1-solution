@@ -9,14 +9,8 @@
     $scope.fruit = "";
 
     $scope.sayMessage = function (){
-      if($scope.fruit.length < 1){
-        $scope.fruit = "Enter value";
-      }else{
         $scope.fruit = "Enjoy!";
-      }
-
     };
 
   }
-  
   })();
