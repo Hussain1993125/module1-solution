@@ -7,8 +7,8 @@
         $scope.itemLunch = itemLunch;
     };
 
-    $scope.addLunch = function(){
-        return "";
+    $scope.sayMessage = function(){
+        return "Enjoy!";
     }
 
 }) ();

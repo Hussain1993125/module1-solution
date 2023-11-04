@@ -21,11 +21,11 @@
              class="form-control" ng-model="itemLunch">
          </div>
          <div class="form-group">
-             <button class="btn btn-default">Check If Too Much</button>
+             <button class="btn btn-default" ng-onclick="sayMessage()">Check If Too Much</button>
          </div>
          <div class="form-group message">
            <!-- Your message can go here. -->
-           {{  }}
+           {{sayMessage()}}
          </div>
    </div>
 
