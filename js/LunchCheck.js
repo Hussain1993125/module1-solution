@@ -1,14 +1,14 @@
 (function () {
     'use restric';
     angular.module('LunchCheck',[]).controller('LunchCheckController', LunchCheckController);
-    LunchCheckController.$inject = [$scope];
+    LunchCheckController.$inject = ['$scope'];
 
     function LunchCheckController ($scope){
-        $scope.itemLunch = itemLunch;
-    };
+        $scope.Lunch = $scope;
 
-    $scope.sayMessage = function(){
-        return "Enjoy!";
+        $scope.sayMessage = function () {
+            return "Enjoy!";
+        };
     }
-
+    
 }) ();
