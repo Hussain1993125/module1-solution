@@ -1,14 +1,22 @@
 (function () {
-    'use restric';
-    angular.module('LunchCheck',[]).controller('LunchCheckController', LunchCheckController);
-    LunchCheckController.$inject = ['$scope'];
+  'use strict';
+  
+  angular.module('LunchCheck', [])
+  .controller('LunchCheckController', LunchCheckController);
+  CounterController.$inject = ['$scope'];
+  
+  function LunchCheckController($scope) {
+    $scope.fruit = "";
 
-    function LunchCheckController ($scope){
-        $scope.Lunch = $scope;
+    $scope.sayMessage = function (){
+      if($scope.fruit.length < 1){
+        $scope.fruit = "Enter value";
+      }else{
+        $scope.fruit = "Enjoy!";
+      }
 
-        $scope.sayMessage = function () {
-            return "Enjoy!";
-        };
-    }
-    
-}) ();
+    };
+
+  }
+  
+  })();
